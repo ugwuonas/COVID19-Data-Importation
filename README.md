@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Capstone_part1
 
 # COVID-19 Data Import Script
@@ -26,3 +27,6 @@ The script will read the data from the provided URL and insert it into the covid
 Notes
 The script assumes that the provided CSV file has columns with the following names: 'SNo', 'ObservationDate', 'Province', 'Country', 'LastUpdate', 'Confirmed', 'Deaths', 'Recovered'. If your CSV file has different column names, please adjust the script accordingly.
 The 'ObservationDate' column in the CSV file is expected to be in the format '%m/%d/%Y'. If your date format is different, modify the datetime.strptime() function accordingly.
+=======
+# Capstone_part2
+>>>>>>> origin/main
