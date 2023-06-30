@@ -2,7 +2,7 @@
 
 ## COVID-19 Data Import 
 ### Introduction:
-The Covid 19 pandemic has wreaked havoc and led to the dramatic loss of lives and livelihoods. Its impact continues to affect the way in we live and interact. In this project, I analyzed sample data related to COVID-19 cases as recorded from January 2019 to December 2020. This code is used to download a CSV file containing COVID-19 data and import it into a PostgreSQL database. It utilizes the requests, psycopg2, os, csv, and pandas libraries
+The Covid 19 pandemic has wreaked havoc and led to the dramatic loss of lives and livelihoods. Its impact continues to affect the way we live and interact. In this project, I analyzed sample data related to COVID-19 cases as recorded from January 2019 to December 2020. This code is used to download a CSV file containing COVID-19 data and import it into a PostgreSQL database. It utilizes the requests, psycopg2, os, csv, and pandas libraries
 
 This repository contains:
 - ### Part1.ipynb
@@ -32,24 +32,30 @@ Follow these steps to run the code successfully:
    - Create a new database (e.g., 'Capstone').
      
 3. Set the environment variables:
-   - Set the user environment variable to your PostgreSQL username.
-   - Set the password environment variable to your PostgreSQL password.
+
+Set the user environment variable to your PostgreSQL username. For example:
+export user=your_username
+Set the password environment variable to your PostgreSQL password. For example:
+
+export password=your_password
+   - Set the user environment variable to your PostgreSQL username. For example: export user=your_username
+   - Set the password environment variable to your PostgreSQL password. For example: export password=your_password
      
-4. Download the COVID-19 data file:
+5. Download the COVID-19 data file:
    - Specify the URL of the file to download in the URL variable.
    - Set the filename variable to the desired name of the downloaded file.
    - Run the code to download the file using the download_file function.
      
-5. Connect to the PostgreSQL database:
+6. Connect to the PostgreSQL database:
    - Modify the get_db_connection function parameters if necessary (host, database, user, password).
    - Call the get_db_connection function to establish a connection to the database.
      
-6. Load the data into the PostgreSQL database:
+7. Load the data into the PostgreSQL database:
    - The CSV file is read into a Pandas DataFrame.
    - Each row of the DataFrame is inserted into the PostgreSQL database using a cursor.
    - Adjust the SQL query and table structure to match your database schema if needed.
      
-7. Close the cursor and connection:
+8. Close the cursor and connection:
    - After the data import is complete, close the cursor and connection to the database.
 ### Notes 
 The script assumes that the provided CSV file has columns with the following names: 'SNo', 'ObservationDate', 'Province', 'Country', 'LastUpdate', 'Confirmed', 'Deaths', 'Recovered'. If your CSV file has different column names, please adjust the script accordingly.
