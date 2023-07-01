@@ -1,4 +1,6 @@
-# Capstone_part1
+# COVID-19 Data Import 
+The Covid 19 pandemic has wreaked havoc and led to the dramatic loss of lives and livelihoods. Its impact continues to affect the way we live and interact. In this project, I analyzed sample data related to COVID-19 cases as recorded from January 2019 to December 2020. 
+
 This repository contains:
 - ### Part1.ipynb
      This script downloads a CSV file containing COVID-19 data from the provided URL and imports it into a PostgreSQL database. It utilizes the `psycopg2` library to establish a connection with the database, the requests, os, csv, and pandas libraries.
@@ -6,9 +8,6 @@ This repository contains:
     This is an SQL file containing all the queries used to analyze and generate insight from the data.
 - ### Outputs folder
     This folder contains screenshots of the outputs from running the queries.
-
-## COVID-19 Data Import 
-The Covid 19 pandemic has wreaked havoc and led to the dramatic loss of lives and livelihoods. Its impact continues to affect the way we live and interact. In this project, I analyzed sample data related to COVID-19 cases as recorded from January 2019 to December 2020. 
 
 ## Prerequisites
 Before running the code, ensure that the following prerequisites are met:
