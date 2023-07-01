@@ -2,7 +2,7 @@
 The Covid 19 pandemic has wreaked havoc and led to the dramatic loss of lives and livelihoods. Its impact continues to affect the way we live and interact. In this project, I analyzed sample data related to COVID-19 cases as recorded from January 2019 to December 2020. 
 
 This repository contains:
-- ### Part1.ipynb
+- ### covid19_data_import.ipynb
      This script downloads a CSV file containing COVID-19 data from the provided URL and imports it into a PostgreSQL database. It utilizes the `psycopg2` library to establish a connection with the database, the requests, os, csv, and pandas libraries.
 - ### SQL_Queries
     This is an SQL file containing all the queries used to analyze and generate insight from the data.
