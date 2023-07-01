@@ -11,12 +11,9 @@ This repository contains:
 
 ## Prerequisites
 Before running the code, ensure that the following prerequisites are met:
-
-Python 3.x is installed on your system.
-Required packages are installed. You can install them using pip:
 - Python 3.x is installed on your system.
 - PostgreSQL database server
-- Required packages(Python libraries: `psycopg2`, `pandas`) are installed. You can install them using pip: 
+- Required packages(Python libraries: `psycopg2`, `pandas`) are installed. You can install them using pip.
   
 
 ## Instructions
