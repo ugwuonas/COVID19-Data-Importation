@@ -1,13 +1,11 @@
 # COVID-19 Data Import 
-The Covid 19 pandemic has wreaked havoc and led to the dramatic loss of lives and livelihoods. Its impact continues to affect the way we live and interact. In this project, I analyzed sample data related to COVID-19 cases as recorded from January 2019 to December 2020. 
+This repo contains code for downloading and loading data into PostgreSQL, SQL queries for analyzing the sample data related to COVID-19 cases as recorded from January 2019 to December 2020, and screenshots of the outputs from running the queries.
 
-This repository contains:
-- ### covid19_data_import.ipynb
-     This script downloads a CSV file containing COVID-19 data from the provided URL and imports it into a PostgreSQL database. It utilizes the `psycopg2` library to establish a connection with the database, the requests, os, csv, and pandas libraries.
-- ### SQL_Queries
-    This is an SQL file containing all the queries used to analyze and generate insight from the data.
-- ### Outputs folder
-    This folder contains screenshots of the outputs from running the queries.
+
+## Files
+-  `covid19_data_import.ipynb`: This script downloads a CSV file containing COVID-19 data from the provided URL and imports it into a PostgreSQL database. It utilizes the psycopg2 library to establish a connection with the database, the requests, os, csv, and pandas libraries.
+-  `SQL_Queries`: This is an SQL file containing all the queries used to analyze and generate insight from the data.
+-  `Outputs folder`: This folder contains screenshots of the outputs from running the queries.
 
 ## Prerequisites
 Before running the code, ensure that the following prerequisites are met:
@@ -45,6 +43,7 @@ Follow these steps to run the code successfully:
      
 7. Close the cursor and connection:
    - After the data import is complete, close the cursor and connection to the database.
+  
 ### Notes 
 The script assumes that the provided CSV file has columns with the following names: 'SNo', 'ObservationDate', 'Province', 'Country', 'LastUpdate', 'Confirmed', 'Deaths', 'Recovered'. If your CSV file has different column names, please adjust the script accordingly.
 The 'ObservationDate' column in the CSV file is expected to be in the format '%m/%d/%Y'. If your date format is different, modify the datetime.strptime() function accordingly.
