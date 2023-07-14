@@ -1,5 +1,5 @@
 # COVID-19 Data Import 
-This repo contains code for downloading and loading data into PostgreSQL, SQL queries for analyzing the sample data related to COVID-19 cases as recorded from January 2019 to December 2020, and screenshots of the outputs from running the queries.
+This repository contains code for downloading and loading data into PostgreSQL, SQL queries for analyzing the sample data related to COVID-19 cases as recorded from January 2019 to December 2020, and screenshots of the outputs from running the queries.
 
 
 ## Files
