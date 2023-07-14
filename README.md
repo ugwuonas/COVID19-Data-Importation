@@ -3,7 +3,7 @@ This repository contains code for downloading and loading data into PostgreSQL, 
 
 
 ## Files
--  `covid19_data_import.ipynb`: This script downloads a CSV file containing COVID-19 data from the provided URL and imports it into a PostgreSQL database. It utilizes the psycopg2 library to establish a connection with the database, the requests, os, csv, and pandas libraries.
+-  `covid19_data_import.ipynb`: This script downloads a CSV file containing COVID-19 data from the provided URL and imports it into a PostgreSQL database. It utilizes the *psycopg2* library to establish a connection with the database, the *requests*, *os*, *csv*, and *pandas* libraries.
 -  `SQL_Queries`: This is an SQL file containing all the queries used to analyze and generate insight from the data.
 -  `Outputs folder`: This folder contains screenshots of the outputs from running the queries.
 
@@ -11,7 +11,7 @@ This repository contains code for downloading and loading data into PostgreSQL, 
 Before running the code, ensure that the following prerequisites are met:
 - Python 3.x is installed on your system.
 - PostgreSQL database server
-- Required packages(Python libraries: `psycopg2`, `pandas`) are installed. You can install them using pip.
+- Required packages(Python libraries: *psycopg2*, *pandas*) are installed. You can install them using pip.
   
 
 ## Instructions
@@ -24,8 +24,8 @@ Follow these steps to run the code successfully:
    - Create a new database.
      
 3. Set the environment variables:
-   - Set the user environment variable to your PostgreSQL username. For example: export user=your_username
-   - Set the password environment variable to your PostgreSQL password. For example: export password=your_password
+   - Set the user environment variable to your PostgreSQL username. For example: *export user=your_username*
+   - Set the password environment variable to your PostgreSQL password. For example: *export password=your_password*
      
 4. Download the COVID-19 data file:
    - Specify the URL of the file to download in the URL variable.
@@ -45,8 +45,8 @@ Follow these steps to run the code successfully:
    - After the data import is complete, close the cursor and connection to the database.
   
 ### Notes 
-The script assumes that the provided CSV file has columns with the following names: 'SNo', 'ObservationDate', 'Province', 'Country', 'LastUpdate', 'Confirmed', 'Deaths', 'Recovered'. If your CSV file has different column names, please adjust the script accordingly.
-The 'ObservationDate' column in the CSV file is expected to be in the format '%m/%d/%Y'. If your date format is different, modify the datetime.strptime() function accordingly.
+The script assumes that the provided CSV file has columns with the following names: *SNo*, *ObservationDate*, *Province*, *Country*, *LastUpdate*, *Confirmed*, *Deaths*, *Recovered*. If your CSV file has different column names, please adjust the script accordingly.
+The *ObservationDate* column in the CSV file is expected to be in the format *%m/%d/%Y*. If your date format is different, modify the datetime.strptime() function accordingly.
 
 ## Troubleshooting
 If you encounter any issues or errors while running the code, consider the following:
